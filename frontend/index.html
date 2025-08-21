@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeScape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Recipescape</h1>
+
+    <div id="search_container">
+        <input type="text" id="search" placeholder="Search by title or ingredient...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Recipe Table -->
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Cuisine</th>
+                <th>Rating</th>
+                <th>Total Time</th>
+                <th>Serves</th>
+            </tr>
+        </thead>
+        <tbody id="table_body"></tbody>
+    </table>
+
+    <!-- Drawer -->
+    <div id="recipe_drawer">
+        <div id="drawer_content">
+            <span id="close_drawer">&times;</span>
+            <h2 id="drawer_title"></h2>
+            <p><strong>Cuisine:</strong> <span id="drawer_cuisine"></span></p>
+            <p><strong>Total Time:</strong> <span id="drawer_total_time"></span></p>
+            <p><strong>Description:</strong></p>
+            <p id="drawer_description"></p>
+            <h3>Nutrients</h3>
+            <ul id="drawer_nutrients"></ul>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination">
+        <button id="prevBtn">Previous</button>
+        <span id="pageInfo">Page 1</span>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

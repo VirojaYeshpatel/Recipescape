@@ -4,7 +4,9 @@ const { Pool } = require('pg'); //manage multiple database connections
 require('dotenv').config();
 
 const app = express();
-app.use(cors()); //cross orign request
+app.use(cors({
+    origin: "https://famous-sunflower-444d55.netlify.app/"
+})); //cross orign request
 app.use(express.json()); //parses incoming request
 
 const pool = new Pool({

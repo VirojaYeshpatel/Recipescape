@@ -1,11 +1,5 @@
-// const apiUrl = "http://localhost:4000/api/recipes"; // backend API
-// const searchUrl = "http://localhost:4000/api/recipes/search"; // search endpoint
-
-
-// Backend URLs (Render deployment)
-const apiUrl = "https://recipescape-backend.onrender.com/api/recipes";
-const searchUrl = "https://recipescape-backend.onrender.com/api/recipes/search";
-
+const apiUrl = "http://localhost:4000/api/recipes"; // backend API
+const searchUrl = "http://localhost:4000/api/recipes/search"; // search endpoint
 
 // DOM elements
 const tableBody = document.getElementById("table_body");
